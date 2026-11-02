@@ -23,12 +23,6 @@ def create_prescription_pdf(
     """
     Generate an in-memory PDF prescription and return bytes for Streamlit download.
     """
-    # Streamlit session state can retain older or incomplete result objects.
-    # Normalize both inputs so PDF export remains safe when one result is absent
-    # or has an unexpected type.
-    disease_result = disease_result if isinstance(disease_result, dict) else {}
-    yield_result = yield_result if isinstance(yield_result, dict) else {}
-
     buffer = io.BytesIO()
     doc = SimpleDocTemplate(
         buffer,
@@ -92,10 +86,7 @@ def create_prescription_pdf(
     meta_table = [
         [
             Paragraph(f"<b>Operator / Farmer:</b> {farmer_name}", body_style),
-            Paragraph(
-                f"<b>Crop Variety:</b> {disease_result.get('crop') or yield_result.get('crop') or 'Crop'}",
-                bold_style
-            )
+            Paragraph(f"<b>Crop Variety:</b> {disease_result.get('crop', yield_result.get('crop', 'Crop'))}", bold_style)
         ],
         [
             Paragraph(f"<b>Field Location:</b> {field_location}", body_style),

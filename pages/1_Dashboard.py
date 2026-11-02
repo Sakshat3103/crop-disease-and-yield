@@ -21,7 +21,7 @@ render_sidebar_info()
 render_banner(
     title="AgriVision AI: Crop Disease & Yield Estimation",
     subtitle="An integrated precision agriculture platform combining Computer Vision pathology diagnostics with Machine Learning harvest yield forecasting.",
-    badge="B.Tech AIML Major Project"
+    badge="AGRIVISION AI"
 )
 
 # Load metrics

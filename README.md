@@ -7,7 +7,6 @@
 [![Plotly](https://img.shields.io/badge/Visualization-Plotly-3F4F75.svg)](https://plotly.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Academic Major Project:** B.Tech Artificial Intelligence and Machine Learning (AIML)  
 > **Application Title:** AgriVision AI — Precision Crop Disease Diagnosis & Yield Forecasting Platform
 
 ---
@@ -139,6 +138,5 @@ Open your browser at `http://localhost:8501`.
 
 ## 👥 Academic Context & Project Demonstration
 
-- **Degree:** Bachelor of Technology (B.Tech) in Artificial Intelligence & Machine Learning
 - **Core Specialization:** Computer Vision, Supervised Regression, Agricultural Decision Support
 - **Key Deliverables:** Fully functional multi-page web service, computer vision lesion segmentation heatmap, R² 99.58% yield forecasting, and automated field prescription PDF generation.

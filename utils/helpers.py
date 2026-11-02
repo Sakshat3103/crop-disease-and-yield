@@ -101,8 +101,6 @@ def render_sidebar_info() -> None:
         st.markdown(
             """
             <div style="font-size: 0.75rem; color: #bae6fd; opacity: 0.85;">
-                <strong>B.Tech AIML Major Project</strong><br>
-                Department of Artificial Intelligence & Data Science<br>
                 Crop Disease & Yield Estimation Platform
             </div>
             """,
@@ -119,7 +117,7 @@ def render_footer() -> None:
                 🔬 AgriVision AI — Precision Crop Pathology & Yield Forecasting Engine
             </div>
             <div>
-                Developed for B.Tech AIML Project Demonstration | Powered by Computer Vision & Supervised Machine Learning
+                Powered by Computer Vision & Supervised Machine Learning
             </div>
         </div>
         """,

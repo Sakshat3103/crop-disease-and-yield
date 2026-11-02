@@ -1,0 +1,76 @@
+{
+  "best_model_key": "random_forest",
+  "best_model_name": "Random Forest Regressor",
+  "feature_names": [
+    "Crop",
+    "Season",
+    "Area_Hectares",
+    "Rainfall_mm",
+    "Temperature_C",
+    "Soil_pH",
+    "Nitrogen_kg_ha",
+    "Phosphorus_kg_ha",
+    "Potassium_kg_ha"
+  ],
+  "target": "Yield_ton_ha",
+  "supported_crops": [
+    "Apple",
+    "Banana",
+    "Barley",
+    "Chickpea",
+    "Cotton",
+    "Groundnut",
+    "Maize",
+    "Mustard",
+    "Potato",
+    "Rice",
+    "Soybean",
+    "Sugarcane",
+    "Tomato",
+    "Wheat"
+  ],
+  "seasons": [
+    "Kharif",
+    "Rabi",
+    "Summer",
+    "Whole Year"
+  ],
+  "models": {
+    "random_forest": {
+      "display_name": "Random Forest Regressor",
+      "description": "Ensemble of 100 regression trees modeling complex non-linear Liebig nutrient limits and weather interactions.",
+      "r2_score": 0.9958,
+      "mae": 0.6426,
+      "rmse": 1.2393,
+      "cv_mean": 0.9963,
+      "cv_std": 0.0005
+    },
+    "gradient_boosting": {
+      "display_name": "Gradient Boosting Regressor",
+      "description": "Sequential boosting minimizing pseudo-residuals for high precision forecasting.",
+      "r2_score": 0.9956,
+      "mae": 0.6698,
+      "rmse": 1.2641,
+      "cv_mean": 0.9955,
+      "cv_std": 0.0016
+    },
+    "decision_tree": {
+      "display_name": "Decision Tree Regressor",
+      "description": "Hierarchical tree partitioning feature spaces into discrete yield bins.",
+      "r2_score": 0.9943,
+      "mae": 0.8228,
+      "rmse": 1.4425,
+      "cv_mean": 0.9939,
+      "cv_std": 0.0009
+    },
+    "ridge_regression": {
+      "display_name": "Ridge Regressor (L2 Linear)",
+      "description": "Regularized linear regression penalizing large coefficients across standardized factors.",
+      "r2_score": 0.9903,
+      "mae": 1.4201,
+      "rmse": 1.883,
+      "cv_mean": 0.9899,
+      "cv_std": 0.0015
+    }
+  }
+}

@@ -6,6 +6,7 @@ and Disease Severity Quantification.
 
 from typing import Dict, Any, List
 import pandas as pd
+import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -13,8 +14,7 @@ import plotly.graph_objects as go
 NAVY_THEME = {
     "font": {"family": "Inter, -apple-system, sans-serif", "color": "#0f172a"},
     "paper_bgcolor": "rgba(0,0,0,0)",
-    "plot_bgcolor": "rgba(0,0,0,0)",
-    "margin": {"l": 40, "r": 30, "t": 40, "b": 40}
+    "plot_bgcolor": "rgba(0,0,0,0)"
 }
 
 
